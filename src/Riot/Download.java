@@ -10,9 +10,9 @@ import java.net.URL;
 import java.util.StringTokenizer;
 //TODO download data from Riot in a JSON format instead of just a string
 public class Download {
-    public URL riot;
-    public String apiKey;
-    public String fullUrl;
+    private URL riot;
+    private String apiKey;
+    private String fullUrl;
 
     Download(String request, String apiKey) throws Exception{
         this.fullUrl = request.concat(apiKey);
